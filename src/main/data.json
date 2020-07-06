@@ -1,0 +1,8 @@
+[
+  { "num": 1, "word": "Eins" },
+  { "num": 2, "word": "Zwei" },
+  { "num": 3, "word": "Drei" },
+  { "num": 4, "word": "Vier" },
+  { "num": 5, "word": "Fünf" },
+  { "num": 0, "word": "Null" }
+]

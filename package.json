@@ -1,0 +1,26 @@
+{
+  "name": "num-conv-string",
+  "version": "1.0.9",
+  "description": "",
+  "main": "dist/conv-num-string.js",
+
+  "scripts": {
+    "build": "rimraf dist && webpack"
+  },
+  "keywords": [
+    "JavaScript Library",
+    "WebPack"
+  ],
+  "author": "Matthias Bachmann",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbachmann/num-conv-string"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.15",
+    "lodash-es": "^4.17.15",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

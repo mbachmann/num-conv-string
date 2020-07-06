@@ -1,0 +1,9 @@
+src
+webpack.config.js
+webpack.dev.config.js
+.idea
+num-conv-string.iml
+
+lib/*umd.js
+lib/*js2.js
+lib/*umd.js
