@@ -1,11 +1,12 @@
 {
   "name": "num-conv-string",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "",
-  "main": "dist/conv-num-string.js",
+  "main": "lib/conv-num-string.umd.min.js",
 
   "scripts": {
-    "build": "rimraf dist && webpack"
+    "build": "rimraf lib && webpack --mode production",
+    "dev": "rimraf lib && webpack --mode development"
   },
   "keywords": [
     "JavaScript Library",
@@ -19,7 +20,6 @@
   },
   "devDependencies": {
     "lodash": "^4.17.15",
-    "lodash-es": "^4.17.15",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   }

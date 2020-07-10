@@ -1,6 +1,4 @@
 const path = require('path');
-const pkg = require('./package.json');
-
 
 let libraryFileName = 'num-conv-string';
 let libraryName = 'numConvString';
@@ -19,7 +17,7 @@ function createConfig(options) {
     return {
         entry: './src/main/index.js',
         mode: mode,
-        devtool: 'inline-source-map',
+        devtool: options.mode === 'production' ? false : 'source-map',
         output: {
             path: path.resolve(__dirname, 'lib'),
             filename: outputFile,
@@ -39,6 +37,6 @@ function createConfig(options) {
     };
 }
 
-module.exports = [
-    createConfig({target: 'umd', mode: 'production'}),
-];
+module.exports = (env, argv) => ( [
+    createConfig({target: 'umd', mode: argv.mode})
+]);

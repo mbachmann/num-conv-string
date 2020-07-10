@@ -1,7 +1,7 @@
 # num-conv-string
 
 This project creates the num-conv-string library in umd format. The library is available in npmjs. The file
-index.js contains 2 function numToWord() and wordToNum(). The source code for the 2 functions is copied from
+index.js contains 2 function numToWord() and wordToNum(). The source code for the two functions was copied from
 https://webpack.js.org/guides/author-libraries/
 
 ## Installation
@@ -63,3 +63,10 @@ var numConvString = require('../../lib/num-conv-string.umd.js');
 
 console.log(numConvString.wordToNum('Zwei'));
 ```
+
+## Testing with other projects
+
+There are two test projects for this library:
+
+https://github.com/mbachmann/es6-es5-lib-test
+https://github.com/mbachmann/num-conv-string-test

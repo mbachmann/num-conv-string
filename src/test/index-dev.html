@@ -1,0 +1,22 @@
+<html lang="de">
+<head>
+    <title>Webpack Library Beispiel - Übersetzung von Zahlen</title>
+    <meta charset="utf-8"/>
+    <script type='text/javascript' src='https://unpkg.com/lodash@4.16.6'></script>
+    <!-- <script src="https://unpkg.com/num-conv-string"></script> -->
+</head>
+<body>
+<div id='root'>
+</div>
+<script type='text/javascript' src='../../lib/num-conv-string.umd.js'></script>
+<script type='text/javascript'>
+    document.getElementById('root').innerHTML = " Ein Browser Beispiel für den Aufruf einer API: " +
+        "<br> <br>Resultat: " +
+        "<br> übersetze wordToNum('Eins') zu " + numConvString.wordToNum('Eins') +
+        "<br> übersetze wordToNum('Zwei') zu " + numConvString.wordToNum('Zwei') +
+        "<br> übersetze numToWord(1) zu " + numConvString.numToWord(1) +
+        "<br> übersetze numToWord(2) zu " + numConvString.numToWord(2) +
+            "" ;
+</script>
+</body>
+</html>
